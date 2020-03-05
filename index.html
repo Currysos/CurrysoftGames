@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/MainDesign.css" rel="stylesheet" />
+    <link href="css/MobileDesign.css" rel="stylesheet" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrySoft</title>
+</head>
+<body data-aos="zoom-out">
+    <!-- Header and nav and all that fun stuff -->
+    <img class="TopBackground rellax" data-rellax-speed="-4" src="img/SpaceBackground.png" alt="Background header image, spaceship" />
+    <h1 class="rellax" id="Slogan"
+        data-rellax-speed="5">
+        Code To Survive
+    </h1>
+
+    <header data-aos="fade-down" data-aos-duration="2000">
+        <h1>CURRYSOFT GAMES</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Start</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content section -->
+    <content>
+        <section class="Thin"
+                 data-aos="fade-left"
+                 data-aos-duration="2000">
+            <h1>Who am I?</h1>
+            <p>I am a solo programmer focusing on making video games, both for pc and mobile. I started programming when I was 8 years old and have made games ever since. I am now programming in C# and Unity while studying.</p>
+        </section>
+
+        <section class="Row Gray Thin"
+                 data-aos="zoom-out"
+                 data-aos-duration="2000">
+            <a href="#"><img class="Icon" src="img/InstagramIcon.png" alt="Instagram Icon" /></a>
+            <a href="#"><img class="Icon" src="img/LinkedInIcon.png" alt="LinkedIn Icon" /></a>
+            <a href="#"><img class="Icon" src="img/TwitterIcon.png" alt="Twitter Icon" /></a>
+            <a href="#"><img class="Icon" src="img/FacebookIcon.png" alt="Facebook Icon" /></a>
+            <a href="#"><img class="Icon" src="img/YoutubeIcon.png" alt="Youtube Icon" /></a>
+        </section>
+
+        <section class="Split">
+            <div class="Left"
+                 data-aos="fade-right"
+                 data-aos-duration="500">
+                <h1>What I do</h1>
+                <p>I mostly just watch anime, climb and drive around cars too fast. But, I still really enjoy programming so making games is still a big part of my daily routine. <br /><br />I've made quite a few games in my time, the one I'm currently working on is one called <a href="#">EVOID</a>.</p>
+            </div>
+            <img class="Right rellax"
+                 data-rellax-speed="1"
+                 data-aos="fade-left"
+                 data-aos-duration="500"
+                 src="img/FunnyMemeCodeThingy.jpg" alt="Code image" />
+        </section>
+
+        <section>
+        </section>
+    </content>
+    <!-- Footer -->
+    <footer>
+        <p>@Currysoft Games</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="js/rellax.min.js"></script>
+    <script>
+        // Accepts any class name
+        var rellax = new Rellax('.rellax');
+    </script>
+</body>
+</html>

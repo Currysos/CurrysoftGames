@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('../misc/PixelFont/px10.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+*, body {
+    padding: 0;
+    margin: 0;
+    font-family: Pixel;
+    color: black;
+    overflow-x: hidden;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 28vw auto 100px;
+    grid-template-areas: "he" "con" "foot";
+}
+
+/*header thingies*/
+
+.TopBackground {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+#Slogan {
+    position: absolute;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top: 12vw;
+    font-size: 5vw;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: he;
+    margin: 10px;
+    transition: 500ms;
+}
+
+    header h1 {
+        color: white;
+        font-size: 40px;
+        margin: 10px;
+        letter-spacing: 3px;
+    }
+
+    header nav {
+        float: right;
+        width: 700px;
+    }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+            header nav ul li {
+                margin: 10px;
+            }
+
+                header nav ul li a {
+                    text-decoration: none;
+                    font-size: 25px;
+                    color: white;
+                    transition: 500ms;
+                    letter-spacing: 3px;
+                }
+
+                    header nav ul li a:hover {
+                        color: orange;
+                    }
+
+/*Everything important*/
+
+content {
+    width: 100%;
+    grid-area: con;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+}
+
+    content section {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: hidden;
+    }
+
+        content section h1 {
+            font-size: 40px;
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        content section p {
+            font-size: 30px;
+            width: 90%;
+            margin: 10px 0px 10px 0px;
+            text-align: left;
+        }
+
+        content section img {
+            width: 120%;
+            height: auto;
+            z-index: -1;
+        }
+
+/*Footer and social things*/
+
+footer {
+    width: 100%;
+    background-color: darkslateblue;
+    grid-area: foot;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    footer p {
+        color: white;
+        font-size: 20px;
+    }
+
+/*Class attributes*/
+
+.Gray {
+    background-color: #f0f0f0;
+}
+
+.Split {
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "L R";
+    grid-template-columns: 1fr 1fr;
+}
+
+.Left {
+    grid-area: L;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Right {
+    grid-area: R;
+    display: flex;
+    flex-direction: column;
+}
+
+.Icon {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    transition: 500ms;
+}
+
+    .Icon:hover {
+        height: 120px;
+        width: 120px;
+        margin: 0px;
+    }
+
+.Thin {
+    height: auto;
+}
+
+.Row {
+    flex-direction: row;
+    justify-content: center;
+}
