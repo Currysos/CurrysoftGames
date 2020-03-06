@@ -3,6 +3,7 @@
 <head>
     <link href="css/MainDesign.css" rel="stylesheet" />
     <link href="css/MobileDesign.css" rel="stylesheet" />
+    <link href="css/Hamburger.css" rel="stylesheet" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -10,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CurrySoft</title>
 </head>
-<body data-aos="zoom-out">
+<body data-aos="fade-down">
     <!-- Header and nav and all that fun stuff -->
     <img class="TopBackground rellax" data-rellax-speed="-4" src="img/SpaceBackground.png" alt="Background header image, spaceship" />
     <h1 class="rellax" id="Slogan"
@@ -18,8 +19,16 @@
         Code To Survive
     </h1>
 
-    <header data-aos="fade-down" data-aos-duration="2000">
+    <header id="Header" class="Close">
         <h1>CURRYSOFT GAMES</h1>
+
+        <div class="Hamburger"
+             onclick="ClassToggle(this)">
+
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
 
         <nav>
             <ul>
@@ -60,12 +69,8 @@
             </div>
             <img class="Right rellax"
                  data-rellax-speed="1"
-                 data-aos="fade-left"
-                 data-aos-duration="500"
+                 data-aos="slide-left"
                  src="img/FunnyMemeCodeThingy.jpg" alt="Code image" />
-        </section>
-
-        <section>
         </section>
     </content>
     <!-- Footer -->
@@ -83,5 +88,7 @@
         // Accepts any class name
         var rellax = new Rellax('.rellax');
     </script>
+
+    <script src="js/SimpleFunctions.js"></script>
 </body>
 </html>

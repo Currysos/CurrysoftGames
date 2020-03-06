@@ -1,5 +1,86 @@
 @media only screen and (max-width: 880px) {
-    header {
-        display: none;
+    body {
+        display: grid;
+        grid-template-rows: 230px auto 100px;
+        grid-template-areas: "he" "con" "foot";
     }
+
+    .TopBackground {
+        height: 230px;
+        width: auto;
+    }
+
+    #Slogan {
+        text-align: center;
+        top: 115px;
+        font-size: 40px;
+    }
+
+    .Hamburger {
+        display: inline-block;
+    }
+
+    header {
+        height: auto;
+        position: fixed;
+        background-color: rgba(72, 61, 139, 0.75);
+        margin: 0px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        transition: 500ms
+    }
+
+        header h1 {
+            display: none;
+        }
+
+        header nav {
+            margin-top: 0px;
+            width: 100%;
+        }
+
+            header nav ul {
+                flex-direction: column;
+            }
+
+    #MobileNavigation {
+        height: auto;
+        display: flex;
+        position: relative;
+        z-index: 2;
+    }
+
+    content section {
+        height: auto;
+    }
+
+        content section h1 {
+            font-size: 30px;
+        }
+
+        content section p {
+            font-size: 20px;
+        }
+
+        content section img {
+            width: 150%;
+        }
+
+    .Split {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Row {
+        flex-wrap: wrap;
+    }
+
+    .Close {
+        height: 40px;
+    }
+
+        .Close nav ul {
+            display: none;
+        }
 }
