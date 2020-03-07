@@ -135,7 +135,7 @@ content {
 
 footer {
     width: 100%;
-    background-color: darkslateblue;
+    background-color: navy;
     grid-area: foot;
     display: flex;
     justify-content: center;
@@ -179,7 +179,7 @@ footer {
     height: 100px;
     width: 100px;
     margin: 10px;
-    transition: 500ms;
+    transition: 300ms;
 }
 
     .Icon:hover {
