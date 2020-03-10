@@ -1,13 +1,13 @@
 @media only screen and (max-width: 880px) {
     body {
         display: grid;
-        grid-template-rows: 230px auto 100px;
+        grid-template-rows: 247px auto 100px;
         grid-template-areas: "he" "con" "foot";
     }
 
     .TopBackground {
-        height: 230px;
-        width: auto;
+        height: auto;
+        width: 880px;
     }
 
     #Slogan {

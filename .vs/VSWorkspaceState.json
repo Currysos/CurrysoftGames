@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CurrysoftGames"
+    "\\css",
+    "\\img",
+    "\\js"
   ],
-  "SelectedNode": "\\CurrysoftGames\\misc",
+  "SelectedNode": "\\js\\rellax.js",
   "PreviewInSolutionExplorer": false
 }
