@@ -131,6 +131,15 @@ content {
             z-index: -1;
         }
 
+        content section ol {
+            max-width: 80vw;
+            margin: 20px 0px 20px 0px;
+        }
+
+            content section ol li {
+                font-size: 25px;
+            }
+
 /*Footer and social things*/
 
 footer {
@@ -196,3 +205,27 @@ footer {
     flex-direction: row;
     justify-content: center;
 }
+
+#AndroidDownloadSteps {
+    display: none;
+}
+
+#AndroidIcon:hover > #AndroidDownloadSteps {
+    display: block;
+}
+
+#AppleDownloadSteps {
+    display: none;
+}
+
+    #AppleIcon:hover #AppleDownloadSteps, #AppleDownloadSteps:hover #AppleDownloadSteps {
+        display: block;
+    }
+
+#WindowsDownloadSteps {
+    display: none;
+}
+
+    #WindowsIcon:hover + #WindowsDownloadSteps, #WindowsDownloadSteps:hover + #WindowsDownloadSteps {
+        display: block;
+    }
