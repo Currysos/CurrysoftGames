@@ -17,19 +17,21 @@
     }
 
     .Hamburger {
-        display: inline-block;
+        display: block;
+        right: 3px;
     }
 
     header {
         height: auto;
         position: fixed;
-        background-color: rgba(0, 0, 128, 0.75);
+        background-color: #f6f6f6;
         margin: 0px;
         width: 100%;
         height: auto;
         flex-direction: column;
         transition: 500ms;
         z-index: 3;
+        position: absolute;
     }
 
         header h1 {
@@ -44,6 +46,18 @@
             header nav ul {
                 flex-direction: column;
             }
+
+                header nav ul li {
+                    width: 80%;
+                    border-bottom: black solid 2px;
+                    overflow-y: hidden;
+                    height: auto;
+                }
+
+                    header nav ul li a {
+                        padding: 10px;
+                        color: black;
+                    }
 
     #MobileNavigation {
         height: auto;
