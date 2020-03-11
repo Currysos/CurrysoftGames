@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/MainDesign.css" rel="stylesheet" />
+    <link href="css/MobileDesign.css" rel="stylesheet" />
+    <link href="css/Hamburger.css" rel="stylesheet" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrySoft</title>
+</head>
+<body data-aos="fade-down">
+    <!-- Header and nav and all that fun stuff -->
+    <img class="TopBackground rellax" data-rellax-speed="-4" src="img/SpaceBattle.jpg" alt="Background header image, spaceship" />
+    <h1 class="rellax" id="Slogan"
+        data-rellax-speed="5">
+        EVOID
+    </h1>
+
+    <header id="Header" class="Close">
+        <h1>CURRYSOFT GAMES</h1>
+
+        <div class="Hamburger"
+             onclick="ClassToggle(this)">
+
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="AboutMe.html">About me</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <content>
+        <section class="Split">
+            <div class="Left">
+                <h1>Be The Last One Standing</h1>
+                <p>
+                    Your team has been wiped out by the enemies and you are the only one alive. It's up to you to show them who is the real deal. Show the red drones who's the boss!
+                </p>
+            </div>
+            <img class="Right rellax"
+                 data-rellax-speed="1"
+                 data-aos="slide-left" src="img/Ship.png" alt="A ship" />
+        </section>
+    </content>
+
+    <!-- Footer -->
+    <footer>
+        <p>@Currysoft Games</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="js/rellax.min.js"></script>
+    <script>
+        // Accepts any class name
+        var rellax = new Rellax('.rellax');
+    </script>
+
+    <script src="js/SimpleFunctions.js"></script>
+</body>
+</html>
