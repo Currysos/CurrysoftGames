@@ -206,26 +206,34 @@ footer {
     justify-content: center;
 }
 
+/*ID attributes*/
+
 #AndroidDownloadSteps {
-    display: none;
+    height: 0px;
+    transition: 1s;
+    overflow-y: hidden;
 }
 
-#AndroidIcon:hover > #AndroidDownloadSteps {
-    display: block;
-}
+    #AndroidDownloadSteps:hover {
+        height: auto;
+    }
 
 #AppleDownloadSteps {
-    display: none;
+    height: 0px;
+    transition: 1s;
+    overflow-y: hidden;
 }
 
-    #AppleIcon:hover #AppleDownloadSteps, #AppleDownloadSteps:hover #AppleDownloadSteps {
-        display: block;
+    #AppleDownloadSteps:hover {
+        height: auto;
     }
 
 #WindowsDownloadSteps {
-    display: none;
+    height: 0px;
+    transition: 1s;
+    overflow-y: hidden;
 }
 
-    #WindowsIcon:hover + #WindowsDownloadSteps, #WindowsDownloadSteps:hover + #WindowsDownloadSteps {
-        display: block;
+    #WindowsDownloadSteps:hover {
+        height: auto;
     }
