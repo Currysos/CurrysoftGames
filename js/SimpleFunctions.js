@@ -1,5 +1,4 @@
-function ClassToggle(x) {
-    x.classList.toggle("change");
+function ClassToggle() {
     document.getElementById("Header").classList.toggle("Close");
 }
 

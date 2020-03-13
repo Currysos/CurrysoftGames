@@ -1,27 +1,50 @@
 .Hamburger {
+    height: 80px;
+    margin-top: -18px;
+    overflow: hidden;
+    position: absolute;
+    width: 80px;
+    right: 5px;
+}
+
+.ham {
     cursor: pointer;
-    overflow-y: hidden;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    margin: 7px 0;
-    transition: 0.4s;
-    border-radius: 3px;
+.hamRotate.active {
+    transform: rotate(45deg) translateY(-5px);
 }
 
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+.hamRotate180.active {
+    transform: rotate(180deg) translateY(-5px);
 }
 
-.change .bar2 {
-    opacity: 0;
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 5.5;
+    stroke-linecap: round;
 }
 
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-7px, -7px);
-    transform: rotate(45deg) translate(-7px, -7px);
+.ham4 .top {
+    stroke-dasharray: 40 121;
+}
+
+.ham4 .bottom {
+    stroke-dasharray: 40 121;
+}
+
+.ham4.active .top {
+    stroke-dashoffset: -68px;
+}
+
+.ham4.active .bottom {
+    stroke-dashoffset: -68px;
 }
