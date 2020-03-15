@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/MainDesign.css" rel="stylesheet" />
+    <link href="css/MobileDesign.css" rel="stylesheet" />
+    <link href="css/Hamburger.css" rel="stylesheet" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrySoft</title>
+</head>
+<body data-aos="fade-down">
+    <!-- Header and nav and all that fun stuff -->
+    <img class="TopBackground rellax" data-rellax-speed="-4" src="img/GhibliResized.png" alt="Background header image, spaceship" />
+
+    <header id="Header" class="Close">
+        <h1>CURRYSOFT GAMES</h1>
+
+        <div class="Hamburger" onclick="ClassToggle()">
+            <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                <path class="line top"
+                      d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+                <path class="line middle"
+                      d="m 70,50 h -40" />
+                <path class="line bottom"
+                      d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+            </svg>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="AboutMe.html">About me</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content section -->
+    <content>
+        <section class="Thin">
+            <h1 style="margin-bottom: 20px">Who am I? You might ask...</h1>
+        </section>
+        <section class="Split">
+
+            <div class="Left">
+                <h1 data-aos="fade-right"
+                    data-aos-duration="500">
+                    In short
+                </h1>
+                <p data-aos="fade-right"
+                   data-aos-duration="500">I am a crude barbarian having all the characteristics to be classefied a terrible person. I like anime, gaming, programing and always trying to be the best at everething. </p>
+            </div>
+            <img class="Right rellax"
+                 data-rellax-speed="1"
+                 data-aos="slide-left"
+                 src="img/Profilbild.jpg" alt="Alternate Text" />
+        </section>
+    </content>
+    <!-- Footer -->
+    <footer>
+        <p>@Currysoft Games</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="js/rellax.min.js"></script>
+    <script>
+        // Accepts any class name
+        var rellax = new Rellax('.rellax');
+    </script>
+
+    <script src="js/SimpleFunctions.js"></script>
+</body>
+</html>

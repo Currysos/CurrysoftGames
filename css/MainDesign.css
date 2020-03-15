@@ -75,7 +75,7 @@ header {
         }
 
             header nav ul li {
-                margin: 10px;
+                margin: 15px;
             }
 
                 header nav ul li a {
@@ -100,6 +100,7 @@ content {
     align-items: center;
     background-color: white;
     z-index: 1;
+    overflow-y: hidden;
 }
 
     content section {
@@ -109,6 +110,7 @@ content {
         flex-direction: column;
         align-items: center;
         overflow-y: hidden;
+        overflow-y: hidden;
     }
 
         content section h1 {
@@ -116,6 +118,7 @@ content {
             width: 100%;
             margin-top: 20px;
             text-align: center;
+            overflow-y: hidden;
         }
 
         content section p {
@@ -123,6 +126,7 @@ content {
             width: 90%;
             margin: 20px 0px 20px 0px;
             text-align: left;
+            overflow-y: hidden;
         }
 
         content section img {
@@ -131,13 +135,20 @@ content {
             z-index: -1;
         }
 
+        content section div {
+            overflow-y: hidden;
+        }
+
         content section ol {
             max-width: 80vw;
             margin: 20px 0px 20px 0px;
+            height: auto;
+            overflow-y: hidden;
         }
 
             content section ol li {
                 font-size: 25px;
+                overflow-y: hidden;
             }
 
 /*Footer and social things*/
@@ -189,6 +200,7 @@ footer {
     width: 100px;
     margin: 10px;
     transition: 300ms;
+    z-index: 3;
 }
 
     .Icon:hover {
@@ -204,6 +216,45 @@ footer {
 .Row {
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.DownloadButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin: 0;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+
+.DownloadButton {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+    .DownloadButton a {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        overflow-y: hidden;
+        text-decoration: none;
+    }
+
+    .DownloadButton:hover {
+        width: 210px;
+        height: 60px;
+        border-radius: 30px;
+        margin: -5px;
+    }
+
+.Heart {
+    width: 320px;
+    height: 280px;
+    margin: auto;
 }
 
 /*ID attributes*/
@@ -212,28 +263,32 @@ footer {
     height: 0px;
     transition: 1s;
     overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-    #AndroidDownloadSteps:hover {
-        height: auto;
-    }
 
 #AppleDownloadSteps {
     height: 0px;
     transition: 1s;
     overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-    #AppleDownloadSteps:hover {
-        height: auto;
-    }
 
 #WindowsDownloadSteps {
     height: 0px;
     transition: 1s;
     overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-    #WindowsDownloadSteps:hover {
-        height: auto;
-    }
+#SpellBook {
+    margin-top: -9vw;
+}

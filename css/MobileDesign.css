@@ -1,4 +1,4 @@
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 900px) {
     body {
         display: grid;
         grid-template-rows: 247px auto 100px;
@@ -8,6 +8,7 @@
     .TopBackground {
         height: auto;
         width: 880px;
+        margin-left: calc((880px - 100vw) / -2);
     }
 
     #Slogan {
@@ -32,6 +33,7 @@
         z-index: 3;
         position: absolute;
         justify-content: flex-start;
+        overflow: hidden;
     }
 
         header h1 {
@@ -83,6 +85,13 @@
 
         content section img {
             width: 150%;
+            margin-top: 100px;
+        }
+
+        content section ol {
+            overflow-y: scroll;
+            height: 100px;
+            width: 100%;
         }
 
     .Split {
@@ -95,12 +104,15 @@
     }
 
     .Close {
-        height: 45px;
+        height: 40px;
         overflow-y: hidden;
     }
 
         .Close nav ul {
-            display: none;
             height: 0px;
         }
+
+    #SpellBook {
+        margin-top: -50px;
+    }
 }
