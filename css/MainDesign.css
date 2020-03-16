@@ -19,6 +19,22 @@ body {
     grid-template-areas: "he" "con" "foot";
 }
 
+    body::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: rgba(245, 245, 245, 0.50);
+        border-radius: 2px;
+    }
+
+    body::-webkit-scrollbar {
+        width: 5px;
+        background-color: rgba(245, 245, 245, 0.5);
+    }
+
+    body::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgba(122, 153, 217, 0.50)), color-stop(0.72, rgba(73, 125, 189, 0.50)), color-stop(0.86, rgba(28, 58, 148, 0.50)));
+    }
+
 /*header thingies*/
 
 .TopBackground {
