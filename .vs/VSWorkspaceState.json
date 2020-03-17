@@ -3,8 +3,10 @@
     "",
     "\\css",
     "\\img",
-    "\\js"
+    "\\js",
+    "\\misc",
+    "\\misc\\Downloads"
   ],
-  "SelectedNode": "\\Contact.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
