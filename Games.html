@@ -22,7 +22,7 @@
     <header id="Header" class="Close">
         <h1>CURRYSOFT GAMES</h1>
 
-        <div class="Hamburger" onclick="ClassToggle()">
+        <div class="Hamburger" id="Hamburger">
             <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
                 <path class="line top"
                       d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
@@ -63,9 +63,9 @@
         <section class="Row Thin Gray"
                  data-aos="zoom-out"
                  data-aos-duration="2000">
-            <img class="Icon" onclick="ToggleAndroidHeight()" src="img/AndroidIcon.png" alt="" />
-            <img class="Icon" onclick="ToggleAppleHeight()" src="img/AppleIcon.png" alt="" />
-            <img class="Icon" onclick="ToggleWindowsHeight()" src="img/WindowsIcon.png" alt="" />
+            <img class="Icon" id="AndroidIcon" src="img/AndroidIcon.png" alt="" />
+            <img class="Icon" id="AppleIcon" src="img/AppleIcon.png" alt="" />
+            <img class="Icon" id="WindowsIcon" src="img/WindowsIcon.png" alt="" />
         </section>
 
         <section class="Thin">
@@ -78,7 +78,7 @@
                     <li>4. Doubleclick on Evoid.exe to play the game</li>
                 </ol>
                 <div class="DownloadButton" style="background-color: #0cafed;">
-                    <a href="">Download</a>
+                    <a href="misc/Downloads/ThisIsAHarmlessText.txt">Download</a>
                 </div>
             </div>
 
@@ -90,7 +90,7 @@
                     <li>3. Find the downlod location on your phone and click install</li>
                 </ol>
                 <div class="DownloadButton" style="background-color: #a4c639;">
-                    <a href="">Download</a>
+                    <a href="misc/Downloads/ThisIsAHarmlessText.txt">Download</a>
                 </div>
             </div>
             <div id="AppleDownloadSteps">
@@ -115,7 +115,6 @@
 
     <script src="js/rellax.min.js"></script>
     <script>
-        // Accepts any class name
         var rellax = new Rellax('.rellax');
     </script>
 

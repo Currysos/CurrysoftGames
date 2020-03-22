@@ -1,3 +1,8 @@
+document.getElementById("Hamburger").addEventListener("click", ClassToggle);
+document.getElementById("AndroidIcon").addEventListener("click", ToggleAndroidHeight);
+document.getElementById("AppleIcon").addEventListener("click", ToggleAppleHeight);
+document.getElementById("WindowsIcon").addEventListener("click", ToggleWindowsHeight);
+
 function ClassToggle() {
     document.getElementById("Header").classList.toggle("Close");
 }
