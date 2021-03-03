@@ -79,7 +79,7 @@ header {
     header nav {
         margin-top: -20px;
         float: right;
-        width: 700px;
+        width: 800px;
     }
 
         header nav ul {
@@ -92,6 +92,7 @@ header {
 
             header nav ul li {
                 margin: 15px;
+                overflow-y: hidden;
             }
 
                 header nav ul li a {
