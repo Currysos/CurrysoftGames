@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="css/MainDesign.css" rel="stylesheet" />
     <link href="css/MobileDesign.css" rel="stylesheet" />
@@ -11,12 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CurrySoft</title>
 </head>
+
 <body data-aos="fade-down">
     <!-- Header and nav and all that fun stuff -->
 
-    <img class="TopBackground rellax" data-rellax-speed="-4" src="img/Background Image Landscape.jpg" alt="Background header image, anime news" />
-    <h1 class="rellax" id="Slogan"
-        data-rellax-speed="5">
+    <img class="TopBackground rellax" data-rellax-speed="-4" src="img/Background Image Landscape.jpg"
+        alt="Background header image, anime news" />
+    <h1 class="rellax" id="Slogan" data-rellax-speed="5">
         Anime News
     </h1>
 
@@ -26,11 +28,10 @@
         <div class="Hamburger" id="Hamburger">
             <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
                 <path class="line top"
-                      d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
-                <path class="line middle"
-                      d="m 70,50 h -40" />
+                    d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+                <path class="line middle" d="m 70,50 h -40" />
                 <path class="line bottom"
-                      d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+                    d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
             </svg>
         </div>
 
@@ -42,15 +43,33 @@
                 <li><a href="Blog.html">Blog</a></li>
                 <li><a href="AboutMe.html">About me</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                
+
             </ul>
         </nav>
     </header>
 
     <content>
-        <section>
+        <section data-aos="fade-right" data-aos-duration="500" class="Thin">
             <h1>About the app</h1>
-            <p>Things will be here soon!</p>
+            <h2>Anime News is an app for the Google Assistant that lets you get anime news just by talking to it</h2>
+            <p>I'm using the <a href="https://jikan.moe/">Jikan API</a>, made by a programmer called Ifran, to get
+                normal data from MyAnimeList. The Jikan API was the obvius choice because it's a rest API, meaning you
+                don't need any authorization to use it. For the more user directed questions such as "Read my watchlist"
+                or "Add Attack on Titan to my plan to watch list" I'm using MyAnimeLists official API. </p>
+        </section>
+        <section class="Gray Thin Row" 
+                data-aos="zoom-out" 
+                data-aos-duration="2000">
+                <a target="_blank" href="https://github.com/Currysos/Anime-News"><img class="Icon" src="img/GithubIcon.png" alt="Github Icon" /></a>
+                <a target="_blank" href="https://jikan.moe/"><img class="Icon" src="img/JikanLogo.png" alt=""></a>
+            
+        </section>
+        <section class="Split">
+            <div class="Left">
+            <h1>Why Google Assistant?</h1>
+            <p>Google Assistant is steadily growing and I am one of them who uses it everyday. I have thought about making an app for MyAnimeList since I use it everyday, I even planned the app 2 years ago (in 2018) for the Assistant. But, I was young and stupid (in Sweden we call it "ung o dum") so the Actions Console, Dialog Flow and Firebase tools provided by Google was to hard for me to learn at the time. Google has since then updated its UI alot making it easier than ever to make apps and I have grown alot as a programmer. This was therefore the perfect time to reincarnate the app and finally get it done. I hope you all will enjoy it!</p>
+            </div>
+            <img src="img/GoogleAssistant.png" alt="" class="Right">
         </section>
     </content>
 
@@ -71,4 +90,5 @@
 
     <script src="js/SimpleFunctions.js"></script>
 </body>
+
 </html>

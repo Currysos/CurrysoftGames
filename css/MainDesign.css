@@ -14,6 +14,7 @@
 }
 
 body {
+    min-height: 100vh;
     display: grid;
     grid-template-rows: 28vw auto 100px;
     grid-template-areas: "he" "con" "foot";
@@ -138,8 +139,14 @@ content {
             overflow-y: hidden;
         }
 
+        content section h2 {
+            font-size: 25px;
+            width: 100%;
+            text-align: center;
+        }
+
         content section p {
-            font-size: 30px;
+            font-size: 20px;
             width: 90%;
             margin: 20px 0px 20px 0px;
             text-align: left;
@@ -147,7 +154,7 @@ content {
         }
 
         content section img {
-            width: 150%;
+            width: 100%;
             height: auto;
             z-index: -1;
         }
